@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <meta charset="utf-8">
+      <meta charset="utf-8" />
       <title>Flexbox</title>
-      <link rel="stylesheet" type="text/css" href="flexbox.css">
+      <link rel="stylesheet" type="text/css" href="flexbox.css" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
    </head>
    <body>
       <footer>
-         
+         <div class="container"> <!-- Estilos generales de margen y centrado -->
+            <div class="wrap-footer"> <!-- Etiqueta flexbox padre general -->
+               <div class="contacto">
+                  <img src="logo.png" alt="logo" />
+                  <a href="tel:+34954838078"><strong>Teléfono</strong> <span>954 83 80 78</span></a>
+                  <a href="mailto:contacto@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a>
+               </div>
+               <form action="" class="formulario">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" required />
+                  <label for="email">E-mail:</label>
+                  <input type="email" id="email" name="email" required />
+                  <div class="sexo">
+                     <label for="mujer">
+                        <input type="radio" id="mujer" name="sexo" value="mujer" /> Mujer
+                     </label>
+                     <label for="hombre">
+                        <input type="radio" id="hombre" name="sexo" value="hombre" /> Hombre
+                     </label>
+                  </div>
+                  <div class="asunto">
+                     <label for="cotizacion">
+                        <input type="checkbox" id="cotizacion" name="asunto" value="cotizacion" /> Cotización
+                     </label>
+                     <label for="reclamos">
+                        <input type="checkbox" id="reclamos" name="asunto" value="reclamos" /> Reclamos
+                     </label>
+                     <label for="comentarios">
+                        <input type="checkbox" id="comentarios" name="asunto" value="comentarios" /> Comentarios
+                     </label>
+                     <label for="otros">
+                        <input type="checkbox" id="otros" name="asunto" value="otros" /> Otros
+                     </label>
+                  </div>
+                  <div>
+                     <label for="mensaje">Mensaje</label>
+                     <textarea name="name" id="mensaje" rows="8" cols="40"></textarea>
+                     <input type="submit" name="name" />
+                  </div>
+               </form>
+            </div>
+         </div>
       </footer>
    </body>
 </html>
