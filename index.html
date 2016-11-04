@@ -8,7 +8,25 @@
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
    </head>
    <body>
-      <div class="wrap-content">
+      <header>
+         <div class="wrap-header">
+            <img src="img/invie.png" alt="logo principal">
+            <nav>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#guitarras">Guitarras</a></li>
+                  <li><a href="#">Precios</a></li>
+               </ul>
+            </nav>
+            <div class="call-to-action">
+               <h1>Guitarras <span class="sub">invie</span>sibles</h1>
+               <p class="lead">Sé la estrella de rock que siempre quisiste ser</p>
+               <!-- Enlace del input button con Javascript -->
+               <input type="button" value="Conece más" onClick="window.open('#guitarras', '_self');">
+            </div>
+         </div>
+      </header>
+      <div class="wrap-content" id="guitarras">
          <h2>Nuestras guitarras</h2>
          <section class="guitarras">
             <article class="guitarra">

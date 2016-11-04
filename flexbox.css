@@ -19,6 +19,50 @@ input,
 textarea {
    outline: 0;
 }
+header {
+   background: url("img/background.png");
+   background-size: cover;
+   margin-bottom: 32px;
+}
+nav {
+   font-size: 24px;
+   display: inline-block;
+   float: right;
+}
+nav li {
+   display: inline-block;
+   margin-left: 18px;
+}
+nav li:before {
+   content: "○";
+   margin-right: 5px;
+   color: white;
+}
+nav a {
+   color: white;
+   text-decoration: none;
+   border-bottom: 3px solid transparent;
+   transition: 0.7s;
+}
+nav a:hover {
+   border-bottom: 3px solid white;
+}
+.call-to-action {
+   color: white;
+   padding-top: 90px;
+   padding-bottom: 150px;
+}
+.call-to-action h1 {
+   font-size: 52px;
+   margin: 0;
+}
+.sub {
+   text-decoration: underline;
+}
+.lead {
+   font-size: 20px;
+   line-height: 0;
+}
 .guitarra {
    border: 1px solid #273b47;
    border-radius: 15px;
@@ -38,10 +82,14 @@ textarea {
    display: flex;
    align-items: center;
 }
+.wrap-header,
 .wrap-content {
    width: 900px;
    margin: auto;
    padding: 0 10px;
+}
+.wrap-header {
+   padding-top: 24px;
 }
 .guitarra-a {
    /*float: right;*/
@@ -149,7 +197,8 @@ input[type="email"]:focus,
 textarea:focus {
    background: #3d5c6f;
 }
-input[type="submit"] {
+input[type="submit"],
+input[type="button"] {
    padding: 10px 12px;
    border: 2px solid white;
    border-radius: 6px;
@@ -160,7 +209,8 @@ input[type="submit"] {
    letter-spacing: 1px;
    transition: 0.3s;
 }
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+input[type="button"]:hover {
    background: white;
    color: #273b47;
 }
