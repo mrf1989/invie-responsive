@@ -1,26 +1,66 @@
 body {
    margin: 0;
    font-family: 'Roboto', sans-serif;
+   color: #303763;
+}
+h3 {
+   font-size: 42px;
+   margin: 24px 0;
 }
 footer {
    background: #303763;
    width: 100%;
    color: white;
    display: flex;
-   position: fixed;
-   bottom: 0;
+   /*position: fixed;
+   bottom: 0;*/
 }
 input,
 textarea {
    outline: 0;
 }
+.guitarra {
+   border: 1px solid #303763;
+   border-radius: 15px;
+   padding: 16px;
+   margin-bottom: 60px;
+   /*overflow: hidden;*/
+   position: relative;
+}
+.guitarra ol {
+   padding: 0;
+}
 .container {
-   width: 100%;
+   width: auto;
    max-width: 900px;
    margin: auto;
    padding: 0 10px;
    display: flex;
    align-items: center;
+}
+.wrap-content {
+   width: 900px;
+   margin: auto;
+   padding: 0 10px;
+}
+.guitarra-a {
+   /*float: right;*/
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+.datos-a {
+   margin-left: 100px;
+}
+.guitarra-b {
+   float: left;
+   position: absolute;
+   bottom: -60px;
+}
+.datos-b {
+   margin-left: 500px;
+   /*position: relative;
+   bottom: 45px;*/
 }
 .wrap-footer {
    padding: 20px 0;
