@@ -1,14 +1,14 @@
 body {
    margin: 0;
    font-family: 'Roboto', sans-serif;
-   color: #303763;
+   color: #273b47;
 }
 h3 {
    font-size: 42px;
    margin: 24px 0;
 }
 footer {
-   background: #303763;
+   background: #273b47;
    width: 100%;
    color: white;
    display: flex;
@@ -20,7 +20,7 @@ textarea {
    outline: 0;
 }
 .guitarra {
-   border: 1px solid #303763;
+   border: 1px solid #273b47;
    border-radius: 15px;
    padding: 16px;
    margin-bottom: 60px;
@@ -136,7 +136,7 @@ textarea {
 input[type="text"],
 input[type="email"],
 textarea {
-   background: #303763;
+   background: #273b47;
    border: 1px solid #eee;
    border-radius: 5px;
    font-family: 'Roboto', sans-serif;
@@ -147,13 +147,13 @@ textarea {
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-   background: #525b95;
+   background: #3d5c6f;
 }
 input[type="submit"] {
    padding: 10px 12px;
    border: 2px solid white;
    border-radius: 6px;
-   background: #303763;
+   background: #273b47;
    color: white;
    font-family: 'Roboto', sans-serif;
    font-variant: small-caps;
@@ -162,11 +162,11 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
    background: white;
-   color: #303763;
+   color: #273b47;
 }
 
 /* Layout max-width 800px */
-@media (max-width: 800px) {
+/*@media (max-width: 800px) {
    .wrap-footer {
       flex-wrap: wrap;
       justify-content: center;
@@ -177,4 +177,4 @@ input[type="submit"]:hover {
       flex-wrap: wrap;
       justify-content: center;
    }
-}
+}*/
