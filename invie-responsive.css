@@ -207,12 +207,15 @@ input[type="button"]:hover {
    color: #273b47;
 }
 @media screen and (max-width: 768px) {
+    header {
+        margin-bottom: 0;
+    }
     .container {
         padding-left: 16px;
         padding-right: 16px;
     }
     .call-to-action {
-        padding: 50px 0;
+        padding: 50px 0 50px 16px;
     }
     .call-to-action h1 {
         font-size: 42px;
@@ -220,6 +223,35 @@ input[type="button"]:hover {
     .lead {
         font-size: 16px;
     }
+    #guitarras {
+        text-align: center;
+    }
+    .guitarra {
+        margin-bottom: 30px;
+    }
+    .guitarra-a {
+        position: static;
+        width: 300px;
+        margin-top: -30px;
+    }
+    .datos-a,
+    .datos-b {
+        margin-left: 0;
+    }
+    .guitarras ol {
+        list-style-type: none;
+    }
+    .guitarra-b {
+        position: static;
+        float: none;
+    }
+    h3 {
+        margin: 5px 0;
+    }
+    .wrap-footer {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
 }
 
 /* Layout max-width 800px */
