@@ -285,6 +285,12 @@ input[type="button"]:hover {
     nav li:before {
         display: none;
     }
+    nav a {
+        border-bottom: 0;
+    }
+    nav a:hover {
+        border-bottom: 0;
+    }
     .call-to-action {
         padding: 24px 0;
     }
