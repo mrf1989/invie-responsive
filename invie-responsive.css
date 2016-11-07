@@ -215,7 +215,7 @@ input[type="button"]:hover {
         padding-right: 16px;
     }
     .call-to-action {
-        padding: 50px 0 50px 16px;
+        padding: 50px 0 60px 16px;
     }
     .call-to-action h1 {
         font-size: 42px;
@@ -251,6 +251,15 @@ input[type="button"]:hover {
     .wrap-footer {
       flex-wrap: wrap;
       justify-content: center;
+   }
+   .contacto,
+   .info {
+       margin: 0;
+   }
+   .contacto {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
    }
 }
 
