@@ -1,0 +1,230 @@
+body {
+   margin: 0;
+   font-family: 'Roboto', sans-serif;
+   color: #273b47;
+}
+h3 {
+   font-size: 42px;
+   margin: 24px 0;
+}
+footer {
+   background: #273b47;
+   width: 100%;
+   color: white;
+   display: flex;
+   /*position: fixed;
+   bottom: 0;*/
+}
+input,
+textarea {
+   outline: 0;
+}
+header {
+   background: url("img/background.png");
+   background-size: cover;
+   margin-bottom: 32px;
+}
+nav {
+   font-size: 24px;
+   display: inline-block;
+   float: right;
+}
+nav li {
+   display: inline-block;
+   margin-left: 18px;
+}
+nav li:before {
+   content: "○";
+   margin-right: 5px;
+   color: white;
+}
+nav a {
+   color: white;
+   text-decoration: none;
+   border-bottom: 3px solid transparent;
+   transition: 0.7s;
+}
+nav a:hover {
+   border-bottom: 3px solid white;
+}
+.call-to-action {
+   color: white;
+   padding-top: 90px;
+   padding-bottom: 150px;
+}
+.call-to-action h1 {
+   font-size: 52px;
+   margin: 0;
+}
+.sub {
+   text-decoration: underline;
+}
+.lead {
+   font-size: 20px;
+   line-height: 0;
+}
+.guitarra {
+   border: 1px solid #273b47;
+   border-radius: 15px;
+   padding: 16px;
+   margin-bottom: 60px;
+   /*overflow: hidden;*/
+   position: relative;
+}
+.guitarra ol {
+   padding: 0;
+}
+.container {
+   width: auto;
+   max-width: 900px;
+   margin: auto;
+   padding: 0 10px;
+   display: flex;
+   align-items: center;
+}
+.wrap-header,
+.wrap-content {
+   width: 900px;
+   margin: auto;
+   padding: 0 10px;
+}
+.wrap-header {
+   padding-top: 24px;
+}
+.guitarra-a {
+   /*float: right;*/
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+.datos-a {
+   margin-left: 100px;
+}
+.guitarra-b {
+   float: left;
+   position: absolute;
+   bottom: -60px;
+}
+.datos-b {
+   margin-left: 500px;
+   /*position: relative;
+   bottom: 45px;*/
+}
+.wrap-footer {
+   padding: 20px 0;
+   display: flex; /* Flexbox */
+   align-items: center;
+}
+.contacto {
+   width: 300px;
+   margin-right: 32px;
+}
+.contacto img,
+.contacto strong {
+   display: block;
+}
+.contacto a {
+   color: white;
+   text-decoration: none;
+   margin-right: 16px;
+   margin-top: 16px;
+}
+.col-izq,
+.col-der {
+   width: 250px;
+   padding: 16px 10px;
+   margin-left: 16px;
+}
+
+/* Flexbox */
+.info,
+.formulario {
+   display: flex;
+   justify-content: space-between;
+   margin-right: 16px;
+}
+.col-izq {
+   margin-right: 18px;
+   display: flex;
+   flex-direction: column;
+}
+.col-izq label {
+   margin-bottom: 10px;
+}
+.col-izq input {
+   margin-bottom: 10px;
+}
+.sexo {
+   margin: 10px 0;
+   display: flex;
+   justify-content: space-around;
+}
+.asunto {
+   display: flex;
+}
+.check {
+   display: flex;
+   flex-direction: column;
+   margin-right: 14px;
+}
+.text-area {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+.text-area label,
+.text-area textarea {
+   margin-bottom: 10px;
+}
+.col-der input {
+   float: right;
+}
+
+/* Estilos de inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+   background: #273b47;
+   border: 1px solid #eee;
+   border-radius: 5px;
+   font-family: 'Roboto', sans-serif;
+   color: white;
+   padding: 5px;
+   transition: 0.3s;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+   background: #3d5c6f;
+}
+input[type="submit"],
+input[type="button"] {
+   padding: 10px 12px;
+   border: 2px solid white;
+   border-radius: 6px;
+   background: #273b47;
+   color: white;
+   font-family: 'Roboto', sans-serif;
+   font-variant: small-caps;
+   letter-spacing: 1px;
+   transition: 0.3s;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover {
+   background: white;
+   color: #273b47;
+}
+
+/* Layout max-width 800px */
+/*@media (max-width: 800px) {
+   .wrap-footer {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+}
+@media (max-width: 600px) {
+   .formulario {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+}*/
