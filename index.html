@@ -2,7 +2,7 @@
 <html>
    <head>
       <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
       <title>Invie - ¡Guitarras invisibles!</title>
       <link rel="stylesheet" type="text/css" href="invie-responsive.css" />
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
@@ -11,7 +11,8 @@
       <header>
          <div class="container">
             <a href="index.html"><img src="img/invie.png" alt="logo principal"></a>
-            <nav>
+            <span class="icon-menu menu" id="button"></span>
+            <nav id="menu">
                <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="#guitarras">Guitarras</a></li>
@@ -107,5 +108,14 @@
             </div>
          </div>
       </footer>
+      <script type="text/javascript">
+        var boton = document.getElementById("button");
+        var menu = document.getElementById("menu");
+        boton.addEventListener("click", mostrarMenu);
+        function mostrarMenu() {
+            menu.classList.toggle("show-menu");
+            boton.classList.toggle("icon-close");
+        }
+      </script>
    </body>
 </html>
