@@ -57,6 +57,7 @@ header {
 }
 table {
     width: 100%;
+    min-width: 800px;
 }
 table,
 th,
@@ -269,6 +270,10 @@ input[type="button"]:hover {
     .container {
         padding-left: 16px;
         padding-right: 16px;
+    }
+    .table {
+        overflow: auto;
+        border: 1px solid #273b47;
     }
     .menu {
         display: none;
