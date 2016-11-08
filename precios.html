@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+      <title>Invie - ¡Guitarras invisibles!</title>
+      <link rel="stylesheet" type="text/css" href="invie-responsive.css" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+   </head>
+   <body>
+       <header>
+         <div class="container">
+            <a href="index.html"><img src="img/invie.png" alt="logo principal"></a>
+            <span class="icon-menu menu" id="button"></span>
+            <nav id="menu">
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index.html#guitarras">Guitarras</a></li>
+                  <li><a href="precios.html">Precios</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <div class="container">
+          <table>
+              <thead>
+                  <tr>
+                      <th>Modelo</th>
+                      <th>Precio</th>
+                      <th>Descripción</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Invie Acústica</td>
+                      <td>199$</td>
+                      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae veritatis dolores soluta, eum ducimus, doloremque itaque reiciendis nulla illo corrupti quisquam ullam. Repellendus ratione quam asperiores provident, aperiam officia!</td>
+                  </tr>
+                  <tr>
+                      <td>Invie Classic</td>
+                      <td>299$</td>
+                      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae veritatis dolores soluta, eum ducimus, doloremque itaque reiciendis nulla illo corrupti quisquam ullam. Repellendus ratione quam asperiores provident, aperiam officia!</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+       <footer>
+         <div class="container"> <!-- Estilos generales de margen y centrado -->
+            <div class="wrap-footer"> <!-- Etiqueta flexbox padre general -->
+               <div class="contacto">
+                  <img src="img/invie-white.png" alt="logo" />
+                  <div class="info">
+                     <a href="tel:+34954838078"><strong>Teléfono</strong> <span>954 83 80 78</span></a>
+                     <a href="mailto:contacto@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a>
+                  </div>
+               </div>
+               <form action="" class="formulario">
+                  <div class="col-izq">
+                     <label for="nombre">Nombre:</label>
+                     <input type="text" id="nombre" name="nombre" required />
+                     <label for="email">E-mail:</label>
+                     <input type="email" id="email" name="email" required />
+                     <div class="sexo">
+                        <label for="mujer">
+                           <input type="radio" id="mujer" name="sexo" value="mujer" /> Mujer
+                        </label>
+                        <label for="hombre">
+                           <input type="radio" id="hombre" name="sexo" value="hombre" /> Hombre
+                        </label>
+                     </div>
+                     <div class="asunto">
+                        <div class="check">
+                           <label for="cotizacion">
+                              <input type="checkbox" id="cotizacion" name="asunto" value="cotizacion" /> Cotización
+                           </label>
+                           <label for="comentarios">
+                              <input type="checkbox" id="comentarios" name="asunto" value="comentarios" /> Comentarios
+                           </label>
+                        </div>
+                        <div class="check">
+                           <label for="reclamos">
+                              <input type="checkbox" id="reclamos" name="asunto" value="reclamos" /> Reclamos
+                           </label>
+                           <label for="otros">
+                              <input type="checkbox" id="otros" name="asunto" value="otros" /> Otros
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-der">
+                     <div class="text-area">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="name" id="mensaje" rows="8" cols="40"></textarea>
+                     </div>
+                     <input type="submit" name="name" />
+                  </div>
+               </form>
+            </div>
+         </div>
+      </footer>
+      <script type="text/javascript">
+        var boton = document.getElementById("button");
+        var menu = document.getElementById("menu");
+        boton.addEventListener("click", mostrarMenu);
+        function mostrarMenu() {
+            menu.classList.toggle("show-menu");
+            boton.classList.toggle("icon-close");
+        }
+      </script>
+   </body>
+</html>
