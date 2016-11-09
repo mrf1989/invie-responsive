@@ -51,7 +51,8 @@ textarea {
    outline: 0;
 }
 header {
-    background: url("img/background.png");
+    background-image: url("img/background.png");
+    background-color: #273b47;
     background-size: cover;
     margin-bottom: 32px;
 }
