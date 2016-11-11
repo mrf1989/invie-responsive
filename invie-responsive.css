@@ -190,7 +190,6 @@ nav a:hover {
 .formulario {
    display: flex;
    justify-content: space-between;
-   margin-right: 16px;
 }
 .col-izq {
    margin-right: 18px;
