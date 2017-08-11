@@ -263,6 +263,23 @@ input[type="button"]:hover {
    background: white;
    color: #273b47;
 }
+.video-container {
+   max-width: 650px;
+   margin: 0 auto 100px auto;
+}
+.video-responsive-container {
+   position: relative;
+   padding-top: 56.4%;
+}
+.video-responsive-src {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
 @media screen and (max-width: 800px) {
     header {
         margin-bottom: 0;
@@ -324,6 +341,9 @@ input[type="button"]:hover {
        display: flex;
        flex-direction: column;
        align-items: center;
+   }
+   .video-container {
+      margin-bottom: 60px;
    }
 }
 @media screen and (max-width: 650px) {
@@ -410,5 +430,8 @@ input[type="button"]:hover {
     .formulario {
       flex-wrap: wrap;
       justify-content: center;
+   }
+   .video-container {
+      margin-bottom: 40px;
    }
 }
